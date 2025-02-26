@@ -138,6 +138,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
     window.addEventListener('resize', handlePageLayout);
 
     return () => window.removeEventListener('resize', handlePageLayout);
+    // prevent unnesecery rerendering and run useEffect only when items.length change
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [length]);
 

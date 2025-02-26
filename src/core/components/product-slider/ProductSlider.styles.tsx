@@ -27,21 +27,19 @@ export const ProductSliderTiles = styled.ul`
 `;
 
 export const ProductSliderTile = styled.li`
-  flex: 0 0 25%;
-  scroll-snap-align: 'center';
+  scroll-snap-align: none;
   min-width: 320px;
-  flex: 0 0 calc(100% / 3);
+
+  --tile-width: calc(20% - 12px);
+
+  flex: 0 0 var(--tile-width);
+
+  @media (max-width: 1023px) {
+    --tile-width: calc(33.33% - 12px);
+  }
 
   @media (max-width: 486px) {
-    flex: 0 0 calc(70% - 12px);
-  }
-
-  @media (min-width: 486px) {
-    flex: 0 0 calc(33% - 12px);
-  }
-
-  @media (min-width: 1024px) {
-    flex: 0 0 calc(25% - 12px);
+    --tile-width: calc(70% - 12px);
   }
 `;
 
