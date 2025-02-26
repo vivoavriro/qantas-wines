@@ -46,7 +46,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <ImageWrapper
           src={image || imageSrc}
           alt={name}
-          data-testId="product-card-image"
+          data-testid="product-card-image"
         />
       </Styled.ProductCardImageWrapper>
       <Styled.ProductCardPriceWrapper>

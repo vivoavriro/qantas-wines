@@ -10,14 +10,17 @@ export const ProductSlider = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 
   scrollbar-color: transparent transparent;
-  scroll-behavior: smooth;
   scrollbar-width: none;
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
     display: none;
-    background-color: transparent;
+    background: transparent;
   }
 `;
 

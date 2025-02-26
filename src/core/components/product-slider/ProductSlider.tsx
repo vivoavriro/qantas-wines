@@ -167,6 +167,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
             <Styled.ProductSliderControlsButton
               onClick={() => scrollTo(currentPage - 1)}
               $align="left"
+              aria-label="previous page"
             >
               <Styled.ProductSliderControlsButtonImg src={PrevArrow} />
             </Styled.ProductSliderControlsButton>
@@ -175,6 +176,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
             <Styled.ProductSliderControlsButton
               onClick={() => scrollTo(currentPage + 1)}
               $align="right"
+              aria-label="next page"
             >
               <Styled.ProductSliderControlsButtonImg src={NextArrow} />
             </Styled.ProductSliderControlsButton>
@@ -187,6 +189,7 @@ const ProductSlider: React.FC<ProductSliderProps> = ({
             <Styled.ProductSliderPaginationDot
               $isActive={index === currentPage}
               key={index}
+              aria-label={`Show slide ${index + 1} of ${pages.length}`}
               onClick={() => {
                 scrollTo(index);
               }}

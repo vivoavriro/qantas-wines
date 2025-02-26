@@ -188,7 +188,7 @@ To improve card visuals:
 
 - I **downloaded product images** from production instead of using random images.
 - We could also implement **srcset** for responsive images, enhancing **performance and quality**.
-- Additionally, a skeleton loader could be implemented to improve the loading experience. However, for an even smoother experience, optimizations such as preloading nearby items or progressive image loading may also be considered.
+- Additionally, a skeleton loader could be implemented to improve the loading experience. also to enhance initial page load time we could add lazy loading to img tag.
 
 ### **11\. Adding e2e test 
 - To enhance the testing coverage, we can integrate Cypress or any other prefered framework for E2E testing. Cypress provides a robust framework for testing user interactions and application workflows. 
