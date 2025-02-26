@@ -193,10 +193,10 @@ To improve card visuals:
 - We could also implement **srcset** for responsive images, enhancing **performance and quality**.
 - Additionally, a skeleton loader could be implemented to improve the loading experience. also to enhance initial page load time we could add lazy loading to img tag.
 
-### **11\. Adding e2e test 
+### **11\. Adding e2e test** 
 - To enhance the testing coverage, we can integrate Cypress or any other prefered framework for E2E testing. Cypress provides a robust framework for testing user interactions and application workflows. 
 
-### **12\. More functionalities on Carousel 
+### **12\. More functionalities on Carousel** 
 The carousel already includes mobile swipe functionality, allowing users to smoothly navigate through items on touch devices.
 we can add:
 - Auto-play: Automatically cycles through carousel items.
