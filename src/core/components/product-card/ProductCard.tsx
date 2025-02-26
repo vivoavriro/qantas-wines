@@ -47,7 +47,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
           src={image || imageSrc}
           alt={name}
           data-testId="product-card-image"
-          loading="lazy"
         />
       </Styled.ProductCardImageWrapper>
       <Styled.ProductCardPriceWrapper>

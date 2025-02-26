@@ -42,6 +42,9 @@ export const ProductCardImageWrapper = styled.div`
   height: ${pxToRem(218)};
   width: 100%;
   align-self: center;
+  img {
+    mix-blend-mode: multiply;
+  }
 `;
 
 export const ProductCardPriceWrapper = styled.div`
