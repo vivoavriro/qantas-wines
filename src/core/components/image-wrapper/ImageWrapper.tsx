@@ -10,10 +10,10 @@ const ImageWrapper: React.FC<ImageWrapperProps> = (props) => {
     <Styled.ImageWrapper>
       {isLoading && <Styled.Skeleton data-testid="image-wrapper-skeleton" />}
       <Styled.Image
-        {...props}
-        $isLoading={isLoading}
+        isLoading={isLoading}
         onLoad={() => setIsLoading(false)}
         data-testid="image-wrapper-img"
+        {...props}
       />
     </Styled.ImageWrapper>
   );
